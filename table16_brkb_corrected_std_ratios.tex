@@ -1,0 +1,15 @@
+\begin{table}[H]
+\centering
+\small
+\begin{tabular}{c c c c c c c c}
+\hline
+\textbf{$k$} & \textbf{Oracle Cost} & \textbf{MC Std} & \textbf{QAE Std} & \textbf{Std Ratio} & \textbf{MC MAE} & \textbf{QAE MAE} & \textbf{MAE Speedup} \\
+\hline
+3 & 57,344 & 0.090334 & 0.035231 & 2.56$\times$ & 0.080462 & 0.029863 & 2.69$\times$ \\
+15 & 253,952 & 0.040088 & 0.010631 & 3.77$\times$ & 0.034870 & 0.009663 & 3.61$\times$ \\
+63 & 1,040,384 & 0.019466 & 0.002946 & 6.61$\times$ & 0.016139 & 0.002407 & 6.71$\times$ \\
+\hline
+\end{tabular}
+\caption{Corrected distributional convergence summary for the BRK-B market-style experiment. Standard deviation ratios compare the spread of Monte Carlo and QAE estimates across independent trials at matched oracle cost. Mean absolute errors are reported relative to the shared discretised target \(V_{\mathrm{disc}}\). The table provides a distributional diagnostic of the corrected estimator-level advantage and should be interpreted alongside the mean-error speedups in Experiment~5.}
+\label{tab:brkb_corrected_std_ratios}
+\end{table}
